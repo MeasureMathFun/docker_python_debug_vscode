@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+  test_python_docker:
+    image: remote_test2
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 2500:2500
+    container_name: my-web-container
+    
+

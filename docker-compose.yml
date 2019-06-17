@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  test_python_docker:
+    image: test_python_docker
+    build: .
+    ports:
+      - 2500:2500
